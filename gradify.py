@@ -13,7 +13,7 @@ class Gradify():
   """
   
   # Cross browser prefixes.
-  BROWSER_PREFIXES = ["-webkit-","", "-moz-", "-o-", "-ms-"]
+  BROWSER_PREFIXES = ["", "-webkit-", "-moz-", "-o-", "-ms-"]
 
   def __init__(self, black_sensitivity=4.3, white_sensitivity = 3, num_colors=4, resize=55, uniformness=7, webkit_only=False):
 
