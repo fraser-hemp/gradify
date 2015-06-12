@@ -1,5 +1,5 @@
 from operator import itemgetter
-import sys, os, argparse
+import sys, os, argparse, platform
 from PIL import Image, ImageFilter
 
 """ Image Gradients
@@ -14,6 +14,12 @@ class Gradify():
   
   # Cross browser prefixes.
   BROWSER_PREFIXES = ["", "-webkit-", "-moz-", "-o-", "-ms-"]
+
+  # Demo browser execution
+  DEMO_CMD = {
+    'Linux': 'xdg-open %s',
+    'Windows': 'start %s' # Not tested (http://superuser.com/questions/246825/open-file-from-the-command-line-on-windows)
+  }
 
   def __init__(self, black_sensitivity=4.3, white_sensitivity = 3, num_colors=4, resize=55, uniformness=7, webkit_only=False):
 
@@ -54,8 +60,11 @@ class Gradify():
     if not self.args.file:
       self.get_dir("")
     if self.args.demo:
-      # TODO: Sorry windows, will fix later
-      os.system("open " + self.demo_file)
+      platformName = platform.system()
+      if platformName in self.DEMO_CMD:
+        os.system(self.DEMO_CMD[platformName] % self.demo_file)
+      else: # Fallback
+        os.system("open " + self.demo_file)
     else:
       self.printRules()
 
