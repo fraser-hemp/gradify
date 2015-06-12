@@ -183,14 +183,12 @@ class Gradify():
       print("}")
 
   def get_file(self, filen):
-    if not "./" is filen[0:1]:
-      filen = "./" + filen
     self.image = Image.open(filen)
     self.imageFileName = filen
     self.get_directions(filen)
 
   def get_dir(self, dir):
-    dir = "./"+ dir + "/"
+    dir = dir + "/"
     self.num_files = len(os.listdir(dir))
     for fn in os.listdir(dir):
       fn = dir + fn
