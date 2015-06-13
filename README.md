@@ -1,6 +1,8 @@
 # gradify
 A module to produce CSS gradients as placeholders for images.
 
+[gradify showcase](http://gradifycss.com "gradify")
+
 0.1 (beta)
 
 The JS version was quickly written to use as an example on the website, and needs futher work.
