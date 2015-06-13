@@ -38,11 +38,11 @@ CLASSNAME - custom classname for the CSS rules to be assigned to (needs work)
 
 `-f --file`
 
-FILE specify a single image file to be used
+FILE (optinal) specify a single image file to be used
 
 `-d --dir`
 
-DIR - specify a direcotry to be used
+DIR (optinal) - specify a direcotry to be used. If not used (and not -f), current dir will be used. Only files with "jpg" extension will be used.
 
 Other important notes:
 There are constants you can tweak which will later be flags (Black/White sensitivity, image resolution, uniformness of colors) although generally the default vals are generally best.
