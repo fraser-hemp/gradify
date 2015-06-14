@@ -22,7 +22,7 @@ To see the flags and their uses
 
 `--demo`
 
-DEMO - this flag will display the images next to their gradient on a webpage on completion.
+DEMO (opt) - this flag will display the images next to their gradient on a webpage on completion.
 
 `--spread`
 
@@ -30,19 +30,19 @@ SPREAD - this flag will give the color which has the least spread over the image
 
 `--single`
 
-SINGLE - Only produce a single, uniform background color - this is much quicker and has all browser support
+SINGLE (opt) - Only produce a single, uniform background color - this is much quicker and has all browser support
 
 `-c --classname`
 
-CLASSNAME - custom classname for the CSS rules to be assigned to (needs work)
+CLASSNAME (opt) - custom classname for the CSS rules to be assigned to (needs work)
 
 `-f --file`
 
-FILE (optinal) specify a single image file to be used
+FILE (opt) specify a single image file to be used
 
 `-d --dir`
 
-DIR (optinal) - specify a direcotry to be used. If not used (and not -f), current dir will be used. Only files with "jpg" extension will be used.
+DIR (opt) - specify a direcotry to be used. If not used (and not -f), current dir will be used. Only files with "jpg" extension will be used.
 
 Other important notes:
 There are constants you can tweak which will later be flags (Black/White sensitivity, image resolution, uniformness of colors) although generally the default vals are generally best.
