@@ -10,9 +10,9 @@ The python source also needs some optimization/styling, especially deep cross-br
 
 # Getting Started
 
-For a quick demo of gradify, simply place some images within the same directory
+For a quick demo of gradify, simply place some images within the same directory and run:
 
-`python gradify.py --demo --spread`
+`$ python gradify.py --demo --spread`
 
 # Usage
 
@@ -26,7 +26,7 @@ DEMO (opt) - this flag will display the images next to their gradient on a webpa
 
 `--spread`
 
-SPREAD - this flag will give the color which has the least spread over the image the highest priority when assigning directions (opposed to most dominant color). This feature improves overall accuracy, however adds complexity and in unique cases it produces counter-intuitive results
+SPREAD (opt) - this flag will give the color which has the least spread over the image the highest priority when assigning directions (opposed to most dominant color). This feature improves overall accuracy, however adds complexity and in unique cases it produces counter-intuitive results
 
 `--single`
 
