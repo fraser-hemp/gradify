@@ -42,7 +42,7 @@ FILE (opt) specify a single image file to be used
 
 `-d --dir`
 
-DIR (opt) - specify a direcotry to be used. If not used (and not -f), current dir will be used. Only files with "jpg" extension will be used.
+DIR (opt) - specify a directory to be used. If not used (and not -f), current dir will be used. Only files with "jpg" extension will be used.
 
 Other important notes:
 There are constants you can tweak which will later be flags (Black/White sensitivity, image resolution, uniformness of colors) although generally the default vals are generally best.
