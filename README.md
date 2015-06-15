@@ -12,7 +12,7 @@ The python source also needs some optimization/styling, especially deep cross-br
 
 For a quick demo of gradify, simply place some images within the same directory
 
-`python gradify --demo --spread`
+`python gradify.py --demo --spread`
 
 # Usage
 
@@ -48,6 +48,14 @@ Other important notes:
 There are constants you can tweak which will later be flags (Black/White sensitivity, image resolution, uniformness of colors) although generally the default vals are generally best.
 
 My only suggestion is increasing the uniformness (by lowering it's val) can improve the general case, improve speed, but decrease the upper limits of accuracy. Increasing sensitivity to black will do the same.
+
+
+# Requirements
+
+gradify depends on Pillow, which you may install using
+`pip install Pillow`
+
+In case you get the error message `ImportError: No module named PIL`, you need to install Pillow first.
 
 
 # License MIT
