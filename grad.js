@@ -66,13 +66,16 @@ Grad.prototype.createCSS = function(colors) {
     }
     s[j] = s[j].slice(0, -1);
   }
-  $("." + this.classname)
-              .css({background: s[0]})
-              .css({background: s[1]})
-              .css({background: s[2]})
-              .css({background: s[3]})
-              .css({background: s[4]})
-  
+
+  var els = [].slice.call(document.querySelectorAll('.' + this.classname));
+  var css = s.reduce(function (previous, current) {
+    return previous + "background:" + current + ";\n";
+  }, "");
+
+  els.forEach(function(el) {
+    var currentStyle = el.getAttribute('style');
+    el.setAttribute('style', currentStyle + css);
+  });
 }
 
 Grad.prototype.getQuads = function(colors) {
