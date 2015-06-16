@@ -8,6 +8,8 @@ A module to produce CSS gradients as placeholders for images.
 The JS version was quickly written to use as an example on the website, and needs futher work.
 The python source also needs some optimization/styling, especially deep cross-browser support and PNG support.
 
+Currently only accepts JPG images
+
 # Getting Started
 
 For a quick demo of gradify, simply place some images within the same directory and run:
@@ -52,7 +54,7 @@ My only suggestion is increasing the uniformness (by lowering it's val) can impr
 
 # Requirements
 
-gradify depends on Pillow, which you may install using
+Gradify depends on Pillow, which you may install using
 `pip install Pillow`
 
 In case you get the error message `ImportError: No module named PIL`, you need to install Pillow first.
