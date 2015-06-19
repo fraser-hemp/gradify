@@ -79,7 +79,7 @@ Grad.prototype.createCSS = function(colors) {
 }
 
 Grad.prototype.getQuads = function(colors) {
-  // Second iterration of pix data is nescessary because
+  // Second iteration of pix data is necessary because
   // now we have the base dominant colors, we have to check the 
   // Surrounding color space for the average location.
   // This can/will be optimized a lot
