@@ -185,6 +185,7 @@ Grad.prototype.getColors = function(colors) {
       bws -= 1;
     } else {
       sensitivity--;
+      if (sensitivity < 0) found = 1;
       // Reset BW sensitivity for new iteration of lower overall sensitivity.
       bws = this.BWSensitivity;
     }
